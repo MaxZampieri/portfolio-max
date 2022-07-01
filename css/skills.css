@@ -1,0 +1,98 @@
+#skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    
+}
+#skills h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #e7e6e6;
+ 
+}
+.container__skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills__card {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid #219E96;
+   
+}
+
+.skills__card h3 {
+  color: #219E96;
+}
+
+.skills__card img {
+    width: 90px;
+    filter: invert(78%) sepia(73%) saturate(3508%) hue-rotate(134deg) brightness(95%) contrast(101%);
+    margin-bottom: 10px;
+}
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  .skills__card {
+   
+    opacity: 0;
+    animation: fade-in 3s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  #skills.loaded .skills__card {
+    animation-play-state: running
+  }
+  
+  #skills.loaded .skills__card:nth-child(2){ animation-delay: 1s }
+  #skills.loaded .skills__card:nth-child(3){ animation-delay: 2s }
+  #skills.loaded .skills__card:nth-child(4){ animation-delay: 3s }
+  #skills.loaded .skills__card:nth-child(5){ animation-delay: 4s }
+
+  /* ======== Responsive ==========*/
+
+@media screen and (max-width: 425px){
+  
+  .skills__card {
+    width: 80px;
+    height: 80px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid #219E96;
+   
+  }
+  .skills__card h3 {
+    font-size: 1rem;
+  }
+  .skills__card img {
+    width: 30px;
+    
+  }
+  #skills h1 {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
+  .card__js {
+    display: none;
+  }
+}

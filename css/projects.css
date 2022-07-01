@@ -1,0 +1,135 @@
+#projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#projects h1{
+    color: #fff;
+    justify-content: center;
+    
+}
+.projects {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    grid-template-rows: 50% 50%;
+    max-width: 1000px;
+    height: 1200px;
+    justify-content: center;
+    padding-top: 100px;
+
+    
+}
+.project__card {
+    border: 2.2px solid #219E96;
+    height: 450px;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.project__card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+}
+.content__project___card {
+    width: 100%;
+    height: fit-content;
+}
+.project__card p {
+    color: #ffffff;
+    padding: 5px;
+    font-weight: lighter;
+    line-height: 22px;
+
+}
+.project__card h3 {
+    color: #07c4ce;
+    padding: 5px;
+}
+.btn__projects {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.project__card button {
+    padding:15px;
+    text-align: center;
+    background-color: #000000;
+    color: #219E96;
+    position: relative;
+    
+
+}
+.project__card button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 5px; 
+    padding: 2.2px; 
+    background:linear-gradient(45deg,rgb(253, 0, 253),rgb(0, 217, 255)); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+  .project__card button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+   /* ======== Responsive ==========*/
+
+@media screen and (max-width: 425px){
+    .projects {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 50% 50%;
+        height: auto;
+        justify-content: center;
+        padding: 0 10px;
+        margin-bottom: 50px;
+    
+        
+    }
+    .project__card img {
+        width: 100%;
+        height:90px;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .project__card p {
+       font-size: .7rem;
+    
+    }
+    .project__card h3 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .project__card button {
+        padding:5px;
+        text-align: center;
+        background-color: #000000;
+        color: #219E96;
+        position: relative;
+        border: none;
+        font-size: .8rem;
+        width: 120px;  
+    
+    }
+    .card__five {
+        display: none;
+    }
+    .card__six {
+        display: none;
+    }
+}
