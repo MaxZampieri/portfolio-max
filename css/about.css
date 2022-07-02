@@ -33,7 +33,7 @@
 @media screen and (max-width: 425px){
     #about {
         width: 100%;
-        height: calc(80vh - 100px);
+        height: calc(60vh - 100px);
     }
     
     .img__about img{
