@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 10px;
     position: relative;
     border: 3px solid #219E96;
    
@@ -40,7 +40,7 @@
 
 .skills__card img {
     width: 90px;
-    filter: invert(78%) sepia(73%) saturate(3508%) hue-rotate(134deg) brightness(95%) contrast(101%);
+    
     margin-bottom: 10px;
 }
 @keyframes fade-in {
@@ -51,7 +51,7 @@
   .skills__card {
    
     opacity: 0;
-    animation: fade-in 3s normal forwards ease-in-out;
+    animation: fade-in .5s normal forwards ease-in-out;
     animation-play-state: paused
   }
   
