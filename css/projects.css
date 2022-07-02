@@ -2,14 +2,18 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
     
 }
-#projects h1{
-    color: #fff;
-    justify-content: center;
-    
+.title__projects{
+    text-align: center;
+}
+.title__projects h1 {
+    color: #e7e6e6;
+    text-transform: uppercase;
+    font-size: 3rem;
 }
 .projects {
     display: grid;
@@ -101,6 +105,9 @@
     
         
     }
+    .title__projects h1 {
+        font-size: 2rem;
+    }
     .project__card img {
         width: 100%;
         height:90px;
@@ -112,7 +119,7 @@
     
     }
     .project__card h3 {
-        font-size: 1rem;
+        font-size: .8rem;
         padding: 5px;
     }
     .project__card button {
