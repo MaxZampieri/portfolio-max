@@ -67,7 +67,7 @@
     padding:15px;
     text-align: center;
     background-color: #000000;
-    color: #219E96;
+    color: #58d3cb;
     position: relative;
     
 
@@ -80,10 +80,10 @@
     padding: 2.2px; 
     background:linear-gradient(45deg,rgb(253, 0, 253),rgb(0, 217, 255)); 
     -webkit-mask: 
-       linear-gradient(#fff 0 0) content-box, 
-       linear-gradient(#fff 0 0);
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude; 
+    mask-composite: exclude; 
   }
   .project__card button:hover {
     transform: scale(1.1);

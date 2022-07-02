@@ -12,6 +12,7 @@
 }
 .title__about span {
     color: #00d2df;
+    font-weight: bolder;
 }
 .content__about h1 {
     text-transform: uppercase;
@@ -25,6 +26,7 @@
     color: #ffffff;
     font-size: 1.3rem;
     word-spacing: 2px;
+    font-weight: lighter;
 }
 .img__about img{
     width: 710px;
