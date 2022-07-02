@@ -99,7 +99,7 @@
 @media screen and (max-width: 425px){
     #about__me {
         width: 100%;
-        height: 80vh;
+        height: 60vh;
     }
     .about__me {
         display: flex;
