@@ -43,26 +43,18 @@
     
     margin-bottom: 10px;
 }
-@keyframes fade-in {
-    from { opacity: 0 }
-    to   { opacity: 1 }
-  }
-  
-  .skills__card {
-   
-    opacity: 0;
-    animation: fade-in .5s normal forwards ease-in-out;
-    animation-play-state: paused
-  }
-  
-  #skills.loaded .skills__card {
-    animation-play-state: running
-  }
-  
-  #skills.loaded .skills__card:nth-child(2){ animation-delay: 1s }
-  #skills.loaded .skills__card:nth-child(3){ animation-delay: 2s }
-  #skills.loaded .skills__card:nth-child(4){ animation-delay: 3s }
-  #skills.loaded .skills__card:nth-child(5){ animation-delay: 4s }
+.appear {
+  transition: all .8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear.inview {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
 
   /* ======== Responsive ==========*/
 
@@ -82,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 10px;
     position: relative;
     border: 3px solid #219E96;
    
