@@ -77,10 +77,14 @@
     border-radius: 10px;
     position: relative;
     border: 3px solid #219E96;
-   
+    margin-bottom: 8px;
+    border: 2px solid #219E96;
+    
   }
   .skills__card h3 {
-    font-size: 1rem;
+    font-size: .6rem;
+    font-weight: lighter;
+    color: #58d3cb;
   }
   .skills__card img {
     width: 30px;
