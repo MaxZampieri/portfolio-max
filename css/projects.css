@@ -114,14 +114,14 @@
   }
   
   .appear2.inview2:nth-child(4) {
-    transition-delay: 2s;
+    transition-delay: .5s;
   }
   
   .appear2.inview2:nth-child(5) {
-    transition-delay: 2.5s;
+    transition-delay: 1s;
   }
   .appear2.inview2:nth-child(6) {
-    transition-delay: 3s;
+    transition-delay: 1.5s;
   }
   
 
