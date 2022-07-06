@@ -9,11 +9,24 @@
 }
 #skills h1 {
   text-align: center;
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #e7e6e6;
- 
+  font-size: 5rem;
+  font-weight: lighter;
+  font-family: "Pacifico";
+  color: #ffffff;
+  animation: neon 5s infinite;
 }
+@keyframes neon {
+  0%, 39%, 41%, 59%, 61%, 100% {
+    text-shadow: 
+    #ffffff 0 0 12px,
+    #2ABFBF 0 0 24px,
+    #2ABFBF 0 0 36px;
+  }
+  40%, 60% {
+    text-shadow: none;
+  }
+}
+
 .container__skills {
     display: flex;
     justify-content: space-evenly;
@@ -23,7 +36,7 @@
 .skills__card {
     width: 200px;
     height: 200px;
-    background-color: #000000;
+    
     display: flex;
     flex-direction: column;
     align-items: center;

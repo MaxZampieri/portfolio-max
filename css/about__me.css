@@ -88,6 +88,8 @@
 .card:hover .face--back {
     transform: rotateX(0deg);
     z-index: 1;
+    background: url("images/ralph-the-simpsons.gif")center / cover no-repeat;
+    
     
 }
 .container__responsive {
